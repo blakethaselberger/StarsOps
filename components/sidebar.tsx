@@ -128,12 +128,12 @@ const NavItem = memo(({ item, pathname, isCollapsed, onNavigate }: {
               "transition-all duration-200 text-left relative group/item",
               "h-12 w-12 p-0 justify-center",
               isActive && [
-                "bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 border border-blue-200/50 shadow-sm",
-                "before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-blue-600 before:rounded-r-full"
+                "bg-gradient-to-r from-green-50 to-emerald-50 text-green-700 border border-green-200/50 shadow-sm",
+                "before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-green-500 before:to-green-600 before:rounded-r-full"
               ],
               !isActive && [
-                "hover:bg-gradient-to-r hover:from-slate-50 hover:to-blue-50/50 hover:text-slate-900 hover:shadow-sm",
-                "hover:before:absolute hover:before:left-0 hover:before:top-0 hover:before:bottom-0 hover:before:w-0.5 hover:before:bg-blue-300 hover:before:rounded-r-full hover:before:transition-all hover:before:duration-200"
+                "hover:bg-gradient-to-r hover:from-slate-50 hover:to-green-50/50 hover:text-slate-900 hover:shadow-sm",
+                "hover:before:absolute hover:before:left-0 hover:before:top-0 hover:before:bottom-0 hover:before:w-0.5 hover:before:bg-green-300 hover:before:rounded-r-full hover:before:transition-all hover:before:duration-200"
               ]
             )}
             asChild
@@ -150,7 +150,7 @@ const NavItem = memo(({ item, pathname, isCollapsed, onNavigate }: {
               <item.icon
                 className={cn(
                   "transition-all duration-200 flex-shrink-0 h-5 w-5",
-                  isActive ? "text-blue-600" : "text-slate-600 group-hover/item:text-slate-700",
+                  isActive ? "text-green-600" : "text-slate-600 group-hover/item:text-slate-700",
                 )}
               />
             </Link>
@@ -176,12 +176,12 @@ const NavItem = memo(({ item, pathname, isCollapsed, onNavigate }: {
             "transition-all duration-200 text-left relative group/item w-full",
             "justify-start gap-3 h-10 px-3 ml-2",
             isActive && [
-              "bg-gradient-to-r from-blue-50 to-indigo-50 text-blue-700 border border-blue-200/50 shadow-sm",
-              "before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-blue-600 before:rounded-r-full"
+              "bg-gradient-to-r from-green-50 to-emerald-50 text-green-700 border border-green-200/50 shadow-sm",
+              "before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-green-500 before:to-green-600 before:rounded-r-full"
             ],
             !isActive && [
-              "hover:bg-gradient-to-r hover:from-slate-50 hover:to-blue-50/50 hover:text-slate-900 hover:shadow-sm",
-              "hover:before:absolute hover:before:left-0 hover:before:top-0 hover:before:bottom-0 hover:before:w-0.5 hover:before:bg-blue-300 hover:before:rounded-r-full hover:before:transition-all hover:before:duration-200"
+              "hover:bg-gradient-to-r hover:from-slate-50 hover:to-green-50/50 hover:text-slate-900 hover:shadow-sm",
+              "hover:before:absolute hover:before:left-0 hover:before:top-0 hover:before:bottom-0 hover:before:w-0.5 hover:before:bg-green-300 hover:before:rounded-r-full hover:before:transition-all hover:before:duration-200"
             ]
           )}
           asChild
@@ -198,7 +198,7 @@ const NavItem = memo(({ item, pathname, isCollapsed, onNavigate }: {
             <item.icon
               className={cn(
                 "transition-all duration-200 flex-shrink-0 h-4 w-4",
-                isActive ? "text-blue-600" : "text-slate-600 group-hover/item:text-slate-700",
+                isActive ? "text-green-600" : "text-slate-600 group-hover/item:text-slate-700",
               )}
             />
             <span className="font-medium text-sm truncate">
@@ -240,7 +240,7 @@ export function Sidebar({ isOpen = true, className, isCollapsed = false, onNavig
   return (
     <div
       className={cn(
-        "relative flex flex-col border-r border-slate-200/60 bg-gradient-to-b from-white via-blue-50/30 to-slate-50/80 backdrop-blur-sm shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] dark:border-gray-800 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-all duration-300 ease-in-out h-full group",
+        "relative flex flex-col border-r border-slate-200/60 bg-gradient-to-b from-white via-green-50/30 to-slate-50/80 backdrop-blur-sm shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] dark:border-gray-800 dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-all duration-300 ease-in-out h-full group",
         // Desktop sizing with collapse functionality
         isCollapsed ? "lg:w-16 lg:min-w-16" : "lg:w-64 lg:min-w-64",
         // Mobile sizing - always full width in sheet
@@ -251,7 +251,7 @@ export function Sidebar({ isOpen = true, className, isCollapsed = false, onNavig
     >
       {/* Header with Logo */}
       <div className={cn(
-        "flex items-center border-b border-slate-200/60 dark:border-gray-800 transition-all duration-300 bg-gradient-to-r from-white via-blue-50/20 to-white",
+        "flex items-center border-b border-slate-200/60 dark:border-gray-800 transition-all duration-300 bg-gradient-to-r from-white via-green-50/20 to-white",
         isCollapsed ? "h-14 md:h-16 px-2 justify-center" : "h-14 md:h-16 px-6"
       )}>
         <Link
@@ -262,7 +262,7 @@ export function Sidebar({ isOpen = true, className, isCollapsed = false, onNavig
           )}
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-blue-600/20 blur-xl rounded-full scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-green-600/20 blur-xl rounded-full scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <img
               src="/dallas-stars.svg"
               alt="Dallas Stars"
@@ -340,7 +340,7 @@ export function Sidebar({ isOpen = true, className, isCollapsed = false, onNavig
           "flex items-center gap-3 p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors cursor-pointer",
           isCollapsed && "lg:justify-center lg:gap-0"
         )}>
-          <div className="h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-medium text-sm">
+          <div className="h-8 w-8 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white font-medium text-sm">
             JD
           </div>
           <div className={cn(

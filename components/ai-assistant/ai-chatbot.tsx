@@ -266,11 +266,11 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
         return (
             <Button
                 onClick={() => setIsOpen(true)}
-                className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 z-50 border-0"
+                className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 z-50 border-0"
                 size="icon"
                 style={{
-                    background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
-                    boxShadow: '0 10px 25px rgba(59, 130, 246, 0.3), 0 4px 10px rgba(0, 0, 0, 0.1)'
+                    background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                    boxShadow: '0 10px 25px rgba(16, 185, 129, 0.3), 0 4px 10px rgba(0, 0, 0, 0.1)'
                 }}
             >
                 <Bot className="h-6 w-6 text-white drop-shadow-sm" />
@@ -285,15 +285,15 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                 isMinimized ? "h-16" : "h-[600px] max-h-[calc(100vh-3rem)]"
             )}
             style={{
-                boxShadow: '0 25px 50px -12px rgba(59, 130, 246, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.1)',
+                boxShadow: '0 25px 50px -12px rgba(16, 185, 129, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.1)',
             }}
         >
-            <CardHeader className="pb-3 bg-gradient-to-r from-blue-50/80 to-blue-100/60 border-b border-slate-200/60 backdrop-blur-sm">
+            <CardHeader className="pb-3 bg-gradient-to-r from-green-50/80 to-green-100/60 border-b border-slate-200/60 backdrop-blur-sm">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <div className="relative">
-                            <Avatar className="h-8 w-8 ring-2 ring-blue-200/50">
-                                <AvatarFallback className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+                            <Avatar className="h-8 w-8 ring-2 ring-green-200/50">
+                                <AvatarFallback className="bg-gradient-to-br from-green-500 to-green-600 text-white">
                                     <Bot className="h-4 w-4" />
                                 </AvatarFallback>
                             </Avatar>
@@ -309,7 +309,7 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                             variant="ghost"
                             size="icon"
                             onClick={() => setIsMinimized(!isMinimized)}
-                            className="h-8 w-8 hover:bg-blue-100/70 transition-colors duration-200"
+                            className="h-8 w-8 hover:bg-green-100/70 transition-colors duration-200"
                         >
                             {isMinimized ? <Maximize2 className="h-4 w-4" /> : <Minimize2 className="h-4 w-4" />}
                         </Button>
@@ -317,7 +317,7 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                             variant="ghost"
                             size="icon"
                             onClick={() => setIsOpen(false)}
-                            className="h-8 w-8 hover:bg-blue-100/70 transition-colors duration-200"
+                            className="h-8 w-8 hover:bg-green-100/70 transition-colors duration-200"
                         >
                             <X className="h-4 w-4" />
                         </Button>
@@ -328,9 +328,9 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
             {!isMinimized && (
                 <CardContent className="p-0 flex flex-col h-[calc(600px-5rem)]">
                     {/* Quick Actions */}
-                    <div className="p-4 border-b bg-gradient-to-r from-slate-50/80 to-blue-50/40 backdrop-blur-sm">
+                    <div className="p-4 border-b bg-gradient-to-r from-slate-50/80 to-green-50/40 backdrop-blur-sm">
                         <p className="text-xs font-medium text-slate-700 mb-3 flex items-center gap-2">
-                            <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                            <span className="w-2 h-2 bg-green-500 rounded-full"></span>
                             Quick Actions
                         </p>
                         <div className="grid grid-cols-3 gap-2">
@@ -340,10 +340,10 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                                     variant="outline"
                                     size="sm"
                                     onClick={() => handleQuickAction(action)}
-                                    className="h-8 text-xs justify-start bg-white/70 hover:bg-blue-50/80 border-slate-200/60 hover:border-blue-300/60 transition-all duration-200 hover:shadow-sm backdrop-blur-sm"
+                                    className="h-8 text-xs justify-start bg-white/70 hover:bg-green-50/80 border-slate-200/60 hover:border-green-300/60 transition-all duration-200 hover:shadow-sm backdrop-blur-sm"
                                     title={action.description}
                                 >
-                                    <span className="text-blue-600">{action.icon}</span>
+                                    <span className="text-green-600">{action.icon}</span>
                                     <span className="ml-1 truncate">{action.label}</span>
                                 </Button>
                             ))}
@@ -363,7 +363,7 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                                 >
                                     {message.type === 'assistant' && (
                                         <Avatar className="h-6 w-6 mt-1">
-                                            <AvatarFallback className="bg-blue-600 text-white text-xs">
+                                            <AvatarFallback className="bg-green-600 text-white text-xs">
                                                 <Bot className="h-3 w-3" />
                                             </AvatarFallback>
                                         </Avatar>
@@ -372,7 +372,7 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                                         className={cn(
                                             "max-w-[80%] rounded-lg px-3 py-2 text-sm",
                                             message.type === 'user'
-                                                ? "bg-blue-600 text-white"
+                                                ? "bg-green-600 text-white"
                                                 : message.type === 'error'
                                                     ? "bg-red-100 text-red-800 border border-red-200"
                                                     : "bg-slate-100 text-slate-900"
@@ -416,7 +416,7 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                             {isTyping && (
                                 <div className="flex gap-3 justify-start">
                                     <Avatar className="h-6 w-6 mt-1">
-                                        <AvatarFallback className="bg-blue-600 text-white text-xs">
+                                        <AvatarFallback className="bg-green-600 text-white text-xs">
                                             <Bot className="h-3 w-3" />
                                         </AvatarFallback>
                                     </Avatar>
@@ -434,7 +434,7 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                     </ScrollArea>
 
                     {/* Input */}
-                    <div className="p-4 border-t bg-gradient-to-r from-white to-blue-50/30 backdrop-blur-sm">
+                    <div className="p-4 border-t bg-gradient-to-r from-white to-green-50/30 backdrop-blur-sm">
                         <div className="flex gap-2">
                             <Input
                                 ref={inputRef}
@@ -442,12 +442,12 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                                 onChange={(e) => setInputValue(e.target.value)}
                                 onKeyPress={handleKeyPress}
                                 placeholder="Ask about cap space, player stats, contracts..."
-                                className="flex-1 border-slate-200/60 bg-white/80 backdrop-blur-sm focus:border-blue-300 focus:ring-blue-200 transition-all duration-200"
+                                className="flex-1 border-slate-200/60 bg-white/80 backdrop-blur-sm focus:border-green-300 focus:ring-green-200 transition-all duration-200"
                             />
                             <Button
                                 onClick={handleSendMessage}
                                 disabled={!inputValue.trim() || isTyping}
-                                className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 border-0 shadow-sm hover:shadow-md transition-all duration-200"
+                                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 border-0 shadow-sm hover:shadow-md transition-all duration-200"
                                 size="icon"
                             >
                                 {isTyping ? (

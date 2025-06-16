@@ -75,9 +75,9 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
   }
 
   return (
-    <header className="sticky top-0 z-30 flex h-14 md:h-16 items-center border-b border-slate-200/60 bg-gradient-to-r from-white via-blue-50/30 to-blue-100/20 backdrop-blur-sm px-3 sm:px-4 md:px-6 shadow-[var(--shadow-subtle)]"
+    <header className="sticky top-0 z-30 flex h-14 md:h-16 items-center border-b border-slate-200/60 bg-gradient-to-r from-white via-green-50/30 to-green-100/20 backdrop-blur-sm px-3 sm:px-4 md:px-6 shadow-[var(--shadow-subtle)]"
       style={{
-        backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(241,245,249,0.8) 50%, rgba(243,244,246,0.9) 100%)'
+        backgroundImage: 'linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(240,253,244,0.8) 50%, rgba(236,253,245,0.9) 100%)'
       }}>
       <TooltipProvider>
         <div className="flex items-center gap-2 md:gap-4">
@@ -218,7 +218,7 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
               >
                 <Bell className="h-4 w-4 md:h-5 md:w-5" />
                 {notificationCount > 0 && (
-                  <span className="absolute -right-0.5 -top-0.5 flex h-3.5 w-3.5 md:h-4 md:w-4 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-[8px] md:text-[9px] font-medium text-white shadow-sm animate-pulse-glow">
+                  <span className="absolute -right-0.5 -top-0.5 flex h-3.5 w-3.5 md:h-4 md:w-4 items-center justify-center rounded-full bg-gradient-to-r from-green-500 to-green-600 text-[8px] md:text-[9px] font-medium text-white shadow-sm animate-pulse-glow">
                     {notificationCount}
                   </span>
                 )}
@@ -226,13 +226,13 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-72 md:w-80 shadow-soft border-slate-200/60">
-              <div className="flex items-center justify-between p-3 md:p-4 bg-gradient-to-r from-slate-50 to-blue-50/50">
+              <div className="flex items-center justify-between p-3 md:p-4 bg-gradient-to-r from-slate-50 to-green-50/50">
                 <h3 className="font-semibold text-slate-900 text-sm md:text-base">Notifications</h3>
                 {notificationCount > 0 && (
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="h-auto p-0 text-xs text-blue-600 hover:text-blue-700"
+                    className="h-auto p-0 text-xs text-green-600 hover:text-green-700"
                     onClick={markAllRead}
                   >
                     <Check className="mr-1 h-3 w-3" />
@@ -245,13 +245,13 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
                 {notifications.map((notification) => (
                   <div
                     key={notification.id}
-                    className={`flex cursor-pointer items-start gap-3 md:gap-4 p-3 md:p-4 transition-all duration-200 hover:bg-gradient-to-r hover:from-slate-50 hover:to-blue-50/50 ${notification.unread
-                      ? "bg-gradient-to-r from-blue-50/50 to-indigo-50/30 border-l-2 border-blue-400"
+                    className={`flex cursor-pointer items-start gap-3 md:gap-4 p-3 md:p-4 transition-all duration-200 hover:bg-gradient-to-r hover:from-slate-50 hover:to-green-50/50 ${notification.unread
+                      ? "bg-gradient-to-r from-green-50/50 to-emerald-50/30 border-l-2 border-green-400"
                       : ""
                       }`}
                   >
                     <div
-                      className={`mt-1 h-2 w-2 rounded-full transition-all duration-200 ${notification.unread ? "bg-blue-500 shadow-sm" : "bg-transparent"
+                      className={`mt-1 h-2 w-2 rounded-full transition-all duration-200 ${notification.unread ? "bg-green-500 shadow-sm" : "bg-transparent"
                         }`}
                     />
                     <div className="flex-1 min-w-0">
@@ -266,11 +266,11 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
                 ))}
               </div>
               <DropdownMenuSeparator />
-              <div className="p-2 text-center bg-gradient-to-r from-slate-50 to-blue-50/50">
+              <div className="p-2 text-center bg-gradient-to-r from-slate-50 to-green-50/50">
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="w-full text-sm text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                  className="w-full text-sm text-green-600 hover:text-green-700 hover:bg-green-50"
                 >
                   View all notifications
                 </Button>
@@ -302,9 +302,9 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
                 size="icon"
                 className="ml-0 rounded-full hover:scale-105 transition-all duration-200 h-8 w-8 md:h-9 md:w-9 p-0"
               >
-                <Avatar className="h-7 w-7 md:h-8 md:w-8 ring-2 ring-blue-500/20 ring-offset-1 hover:ring-blue-500/40 transition-all duration-200">
+                <Avatar className="h-7 w-7 md:h-8 md:w-8 ring-2 ring-green-500/20 ring-offset-1 hover:ring-green-500/40 transition-all duration-200">
                   <AvatarImage src="/placeholder.svg?height=32&width=32" alt="John Doe" />
-                  <AvatarFallback className="bg-gradient-to-br from-blue-500 to-blue-600 text-white font-semibold text-[10px] md:text-xs">
+                  <AvatarFallback className="bg-gradient-to-br from-green-500 to-green-600 text-white font-semibold text-[10px] md:text-xs">
                     JD
                   </AvatarFallback>
                 </Avatar>
@@ -312,7 +312,7 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-52 md:w-56 shadow-soft border-slate-200/60">
-              <div className="flex flex-col space-y-1 p-3 bg-gradient-to-r from-slate-50 to-blue-50/50">
+              <div className="flex flex-col space-y-1 p-3 bg-gradient-to-r from-slate-50 to-green-50/50">
                 <p className="text-sm font-semibold leading-none text-slate-900">John Doe</p>
                 <p className="text-xs font-normal leading-none text-slate-600">Head Scout</p>
               </div>
