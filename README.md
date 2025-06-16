@@ -1,4 +1,4 @@
-# BluesOps - St. Louis Blues Hockey Operations Platform
+# StarsOps - Dallas Stars Hockey Operations Platform
 
 [![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js%2014-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
@@ -7,7 +7,7 @@
 
 ## 🏒 Overview
 
-BluesOps is a comprehensive hockey operations management platform designed specifically for the St. Louis Blues organization. This enterprise-grade SaaS application provides advanced analytics, player management, scouting tools, and team operations features to streamline hockey operations and enhance decision-making.
+StarsOps is a comprehensive hockey operations management platform designed specifically for the Dallas Stars organization. This enterprise-grade SaaS application provides advanced analytics, player management, scouting tools, and team operations features to streamline hockey operations and enhance decision-making.
 
 ## ✨ Features
 
@@ -24,7 +24,7 @@ BluesOps is a comprehensive hockey operations management platform designed speci
 
 ### Technical Features
 
-- **🎨 Modern UI/UX** - Clean, professional interface with St. Louis Blues branding
+- **🎨 Modern UI/UX** - Clean, professional interface with Dallas Stars branding
 - **🌓 Theme Support** - Light mode with dark mode infrastructure (coming soon)
 - **⚡ Performance** - Optimized loading with dynamic imports and lazy loading
 - **🔄 Real-time Updates** - Live data synchronization across the platform
@@ -41,8 +41,8 @@ BluesOps is a comprehensive hockey operations management platform designed speci
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/BluesOps.git
-cd BluesOps
+git clone https://github.com/your-username/StarsOps.git
+cd StarsOps
 ```
 
 2. Install dependencies:
@@ -68,13 +68,13 @@ pnpm dev
 ### Demo Credentials
 
 To explore the platform, use these demo credentials:
-- **Email:** coach@bluesops.com
+- **Email:** coach@starsops.com
 - **Password:** test1234
 
 ## 📁 Project Structure
 
 ```
-BluesOps/
+StarsOps/
 ├── app/                    # Next.js app directory
 │   ├── layout.tsx         # Root layout with providers
 │   ├── page.tsx           # Dashboard/home page
@@ -99,7 +99,7 @@ BluesOps/
 ├── lib/                   # Utility functions
 ├── data/                  # Mock data and constants
 ├── public/                # Static assets
-│   ├── st-louis-blues.svg # Team logo
+│   ├── dallas-stars.svg   # Team logo
 │   └── ...               # Other assets
 └── styles/                # Global styles
 ```
@@ -198,14 +198,14 @@ The application will automatically deploy on push to the main branch.
 
 ## 📄 License
 
-This project is proprietary software for the St. Louis Blues organization. All rights reserved.
+This project is proprietary software for the Dallas Stars organization. All rights reserved.
 
 ## 🏆 Acknowledgments
 
-- St. Louis Blues Hockey Operations Team
+- Dallas Stars Hockey Operations Team
 - Built with [v0.dev](https://v0.dev)
 - Deployed on [Vercel](https://vercel.com)
 
 ---
 
-**BluesOps** - Empowering hockey operations with cutting-edge technology 🏒💙💛
+**StarsOps** - Empowering hockey operations with cutting-edge technology 🏒�⭐

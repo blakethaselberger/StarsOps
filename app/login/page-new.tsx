@@ -72,7 +72,7 @@ export default function LoginPage() {
         }
 
         // Check demo credentials
-        if (email === "coach@bluesops.com" && password === "test1234") {
+        if (email === "coach@starsops.com" && password === "test1234") {
             // Simulate loading
             setTimeout(() => {
                 setIsLoading(false)
@@ -89,7 +89,7 @@ export default function LoginPage() {
     }
 
     const handleDemoFill = () => {
-        setEmail("coach@bluesops.com")
+        setEmail("coach@starsops.com")
         setPassword("test1234")
         setError("")
     }
@@ -104,7 +104,7 @@ export default function LoginPage() {
                     </div>
                     <div className="space-y-2">
                         <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                            BluesOps
+                            StarsOps
                         </h1>
                         <p className="text-slate-600">Hockey Operations Platform</p>
                     </div>
@@ -217,7 +217,7 @@ export default function LoginPage() {
                             <div className="text-center">
                                 <h4 className="text-sm font-medium text-slate-900 mb-2">Demo Credentials</h4>
                                 <div className="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-lg">
-                                    <p><strong>Email:</strong> coach@bluesops.com</p>
+                                    <p><strong>Email:</strong> coach@starsops.com</p>
                                     <p><strong>Password:</strong> test1234</p>
                                 </div>
                                 <Button
@@ -237,7 +237,7 @@ export default function LoginPage() {
 
                 {/* Footer */}
                 <div className="text-center text-xs text-slate-500">
-                    © 2025 BluesOps. Internal hockey operations platform.
+                    © 2025 StarsOps. Internal hockey operations platform.
                 </div>
             </div>
         </div>

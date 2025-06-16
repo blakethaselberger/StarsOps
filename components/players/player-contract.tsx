@@ -144,7 +144,7 @@ export function PlayerContract({ player }: PlayerContractProps) {
         <CardContent>
           <div className="rounded-lg bg-muted/30 p-4">
             <p className="mb-4 text-sm">
-              This contract represents <strong>7.1%</strong> of the team's total salary cap. The Blues are currently{" "}
+              This contract represents <strong>7.1%</strong> of the team's total salary cap. The Stars are currently{" "}
               <strong>$2.3M</strong> under the cap with <strong>22/23</strong> roster spots filled.
             </p>
             <div className="h-4 overflow-hidden rounded-full bg-muted">

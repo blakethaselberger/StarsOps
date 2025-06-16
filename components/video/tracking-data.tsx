@@ -10,7 +10,7 @@ import { Search } from "@/components/ui/search"
 const trackingData = [
   {
     id: 1,
-    playerName: "Ryan O'Reilly",
+    playerName: "Jason Robertson",
     position: "Forward",
     gamesTracked: 25,
     avgSpeed: 28.4,
@@ -21,7 +21,7 @@ const trackingData = [
   },
   {
     id: 2,
-    playerName: "Jordan Kyrou",
+    playerName: "Roope Hintz",
     position: "Forward",
     gamesTracked: 25,
     avgSpeed: 30.1,
@@ -32,7 +32,7 @@ const trackingData = [
   },
   {
     id: 3,
-    playerName: "Robert Thomas",
+    playerName: "Wyatt Johnston",
     position: "Forward",
     gamesTracked: 23,
     avgSpeed: 29.2,
@@ -43,7 +43,7 @@ const trackingData = [
   },
   {
     id: 4,
-    playerName: "Colton Parayko",
+    playerName: "Miro Heiskanen",
     position: "Defense",
     gamesTracked: 25,
     avgSpeed: 27.5,
@@ -54,7 +54,7 @@ const trackingData = [
   },
   {
     id: 5,
-    playerName: "Justin Faulk",
+    playerName: "Esa Lindell",
     position: "Defense",
     gamesTracked: 24,
     avgSpeed: 26.8,

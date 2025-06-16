@@ -18,32 +18,32 @@ const teamStrengthsData = [
 const teamComparisonData = [
   {
     category: "Goals For",
-    "St. Louis Blues": 85,
+    "Dallas Stars": 85,
     "League Average": 75,
   },
   {
     category: "Goals Against",
-    "St. Louis Blues": 78,
+    "Dallas Stars": 78,
     "League Average": 75,
   },
   {
     category: "Power Play %",
-    "St. Louis Blues": 92,
+    "Dallas Stars": 92,
     "League Average": 80,
   },
   {
     category: "Penalty Kill %",
-    "St. Louis Blues": 75,
+    "Dallas Stars": 75,
     "League Average": 78,
   },
   {
     category: "Faceoff %",
-    "St. Louis Blues": 88,
+    "Dallas Stars": 88,
     "League Average": 82,
   },
   {
     category: "Shots For",
-    "St. Louis Blues": 82,
+    "Dallas Stars": 82,
     "League Average": 80,
   },
 ]
@@ -83,7 +83,7 @@ export function AdvancedMetrics() {
                     <PolarGrid stroke="#e2e8f0" />
                     <PolarAngleAxis dataKey="category" tick={{ fill: "#1f2937" }} />
                     <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fill: "#1f2937" }} />
-                    <Radar name="St. Louis Blues" dataKey="value" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.6} />
+                    <Radar name="Dallas Stars" dataKey="value" stroke="#3b82f6" fill="#3b82f6" fillOpacity={0.6} />
                   </RadarChart>
                 </ResponsiveContainer>
               </div>
@@ -106,8 +106,8 @@ export function AdvancedMetrics() {
                     <PolarAngleAxis dataKey="category" tick={{ fill: "#1f2937" }} />
                     <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fill: "#1f2937" }} />
                     <Radar
-                      name="St. Louis Blues"
-                      dataKey="St. Louis Blues"
+                      name="Dallas Stars"
+                      dataKey="Dallas Stars"
                       stroke="#3b82f6"
                       fill="#3b82f6"
                       fillOpacity={0.6}

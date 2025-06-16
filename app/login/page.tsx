@@ -55,7 +55,7 @@ export default function LoginPage() {
         }
 
         // Check demo credentials
-        if (email === "coach@bluesops.com" && password === "test1234") {
+        if (email === "coach@starsops.com" && password === "test1234") {
             // Simulate loading
             setTimeout(() => {
                 setIsLoading(false)
@@ -72,7 +72,7 @@ export default function LoginPage() {
     }
 
     const handleDemoFill = () => {
-        setEmail("coach@bluesops.com")
+        setEmail("coach@starsops.com")
         setPassword("test1234")
         setError("")
     }
@@ -94,20 +94,20 @@ export default function LoginPage() {
                 <div className="text-center space-y-6">
                     <div className="mx-auto relative">
                         <div className="absolute inset-0 bg-blue-600/20 blur-3xl rounded-full scale-150 opacity-50" />
-                        <div className="relative bg-[#003087] rounded-2xl p-6 shadow-2xl border border-[#003087]/20">
+                        <div className="relative bg-[#006847] rounded-2xl p-6 shadow-2xl border border-[#006847]/20">
                             <img
-                                src="/st-louis-blues.svg"
-                                alt="St. Louis Blues"
+                                src="/dallas-stars.svg"
+                                alt="Dallas Stars"
                                 className="h-16 w-16 mx-auto object-contain drop-shadow-2xl"
                             />
                         </div>
                     </div>
                     <div className="space-y-2">
                         <h1 className="text-4xl font-black tracking-tight">
-                            <span className="text-[#003087]">Blues</span>
-                            <span className="text-[#FCB514]">Ops</span>
+                            <span className="text-[#006847]">Stars</span>
+                            <span className="text-[#8F8F8C]">Ops</span>
                         </h1>
-                        <p className="text-sm text-slate-600 font-medium uppercase tracking-wider">St. Louis Blues Hockey Operations</p>
+                        <p className="text-sm text-slate-600 font-medium uppercase tracking-wider">Dallas Stars Hockey Operations</p>
                     </div>
                 </div>
 
@@ -218,7 +218,7 @@ export default function LoginPage() {
                             <div className="text-center">
                                 <h4 className="text-sm font-medium text-slate-900 mb-2">Demo Credentials</h4>
                                 <div className="text-xs text-slate-600 space-y-1 bg-slate-50 p-3 rounded-lg">
-                                    <p><strong>Email:</strong> coach@bluesops.com</p>
+                                    <p><strong>Email:</strong> coach@starsops.com</p>
                                     <p><strong>Password:</strong> test1234</p>
                                 </div>
                                 <Button
@@ -239,8 +239,8 @@ export default function LoginPage() {
                 {/* Footer */}
                 <div className="text-center space-y-2">
                     <div className="flex items-center justify-center gap-2 text-xs text-slate-500">
-                        <img src="/st-louis-blues.svg" alt="Blues" className="h-4 w-4 opacity-50" />
-                        <span>© 2025 St. Louis Blues Hockey Operations</span>
+                        <img src="/dallas-stars.svg" alt="Stars" className="h-4 w-4 opacity-50" />
+                        <span>© 2025 Dallas Stars Hockey Operations</span>
                     </div>
                     <p className="text-xs text-slate-400">Internal platform - Authorized personnel only</p>
                 </div>

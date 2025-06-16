@@ -17,10 +17,10 @@ const notes = [
       role: "Head Coach",
     },
     content:
-      "Just finished reviewing game tape from last night. Defense needs to tighten up on zone entries. @Robert Thomas showed great improvement on faceoffs.",
+      "Just finished reviewing game tape from last night. Defense needs to tighten up on zone entries. @Wyatt Johnston showed great improvement on faceoffs.",
     timestamp: "10:32 AM",
     tags: ["Game Analysis", "Defense"],
-    mentions: ["Robert Thomas"],
+    mentions: ["Wyatt Johnston"],
     likes: 3,
     comments: 2,
   },

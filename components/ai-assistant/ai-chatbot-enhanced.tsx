@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react"
 import { Message, DockPosition } from './types'
-import { getCurrentBluesContext } from './constants'
+import { getCurrentStarsContext } from './constants'
 import { AIChatbotMobile } from './ai-chatbot-mobile'
 import { AIChatbotDesktop } from './ai-chatbot-desktop'
 
@@ -16,7 +16,7 @@ export function AIChatbotEnhanced() {
         {
             id: '1',
             type: 'assistant',
-            content: "Welcome to BluesOps AI. I'm an internal agent developed for the St. Louis Blues organization with comprehensive access to NHL contracts, statistics, CBA rules, and league-wide data. I can provide detailed information about any player, team, or league matter. How can I assist you today?",
+            content: "Welcome to StarsOps AI. I'm an internal agent developed for the Dallas Stars organization with comprehensive access to NHL contracts, statistics, CBA rules, and league-wide data. I can provide detailed information about any player, team, or league matter. How can I assist you today?",
             timestamp: new Date()
         }
     ])
@@ -112,7 +112,7 @@ export function AIChatbotEnhanced() {
                 },
                 body: JSON.stringify({
                     messages: chatMessages,
-                    context: getCurrentBluesContext()
+                    context: getCurrentStarsContext()
                 }),
             })
 

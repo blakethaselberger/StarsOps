@@ -76,9 +76,9 @@ const reportsData = [
   },
   {
     id: 4,
-    title: "Ryan O'Reilly - Contract Extension Analysis",
+    title: "Jason Robertson - Contract Extension Analysis",
     type: "internal",
-    subject: "Ryan O'Reilly",
+    subject: "Jason Robertson",
     subjectType: "Player",
     date: "2024-03-12",
     author: "Lisa Wong",
@@ -89,9 +89,9 @@ const reportsData = [
   },
   {
     id: 5,
-    title: "Jordan Binnington - Performance Analysis",
+    title: "Jake Oettinger - Performance Analysis",
     type: "internal",
-    subject: "Jordan Binnington",
+    subject: "Jake Oettinger",
     subjectType: "Player",
     date: "2024-03-09",
     author: "David Miller",

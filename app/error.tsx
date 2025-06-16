@@ -44,7 +44,7 @@ export default function Error({
           
           <Button
             asChild
-            className="gap-2 bg-[#003087] hover:bg-[#002570] text-white"
+            className="gap-2 bg-[#006847] hover:bg-[#00563a] text-white"
           >
             <Link href="/">
               <Home className="h-4 w-4" />

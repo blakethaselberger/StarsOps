@@ -20,14 +20,14 @@ export default function NotFound() {
         {/* Logo */}
         <div className="flex items-center justify-center gap-3 mb-8">
           <img
-            src="/st-louis-blues.svg"
-            alt="Blues Logo"
+            src="/dallas-stars.svg"
+            alt="Stars Logo"
             className="h-16 w-16 object-contain drop-shadow-sm"
           />
           <div className="flex flex-col items-start">
             <h1 className="text-4xl font-black tracking-tight leading-none">
-              <span className="text-[#003087]">Blues</span>
-              <span className="text-[#FCB514]">Ops</span>
+              <span className="text-[#006847]">Stars</span>
+              <span className="text-[#8F8F8C]">Ops</span>
             </h1>
             <span className="text-xs text-slate-500 font-medium tracking-wider uppercase">
               Hockey Operations
@@ -57,7 +57,7 @@ export default function NotFound() {
           
           <Button
             asChild
-            className="gap-2 bg-[#003087] hover:bg-[#002570] text-white"
+            className="gap-2 bg-[#006847] hover:bg-[#00563a] text-white"
           >
             <Link href="/">
               <Home className="h-4 w-4" />

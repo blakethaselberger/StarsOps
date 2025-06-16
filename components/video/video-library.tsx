@@ -10,7 +10,7 @@ import { Search } from "@/components/ui/search"
 const videos = [
   {
     id: 1,
-    title: "Game Highlights: Blues vs. Blackhawks",
+    title: "Game Highlights: Stars vs. Blackhawks",
     date: "March 15, 2024",
     duration: "10:24",
     type: "Game",
@@ -18,7 +18,7 @@ const videos = [
   },
   {
     id: 2,
-    title: "Player Analysis: Jordan Binnington",
+    title: "Player Analysis: Jake Oettinger",
     date: "March 12, 2024",
     duration: "8:15",
     type: "Analysis",
@@ -34,7 +34,7 @@ const videos = [
   },
   {
     id: 4,
-    title: "Game Highlights: Blues vs. Wild",
+    title: "Game Highlights: Stars vs. Wild",
     date: "March 8, 2024",
     duration: "9:42",
     type: "Game",

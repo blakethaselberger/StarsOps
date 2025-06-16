@@ -36,7 +36,7 @@ export default function Dashboard() {
     <PageLayout>
       <PageHeader
         title="Good morning, John"
-        description="Here's what's happening with the Blues today"
+        description="Here's what's happening with the Stars today"
       />
 
       {/* Quick action cards */}

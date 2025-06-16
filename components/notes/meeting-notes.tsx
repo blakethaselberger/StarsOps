@@ -26,7 +26,7 @@ const notes = [
   },
   {
     id: 2,
-    title: "Player Development - Robert Thomas",
+    title: "Player Development - Wyatt Johnston",
     content:
       "Robert has shown significant improvement in faceoff percentage. Working on his defensive positioning in the defensive zone.",
     author: "Skills Coach Davis",
@@ -62,7 +62,7 @@ const notes = [
   },
   {
     id: 5,
-    title: "Goaltending Review - Jordan Binnington",
+    title: "Goaltending Review - Jake Oettinger",
     content:
       "Jordan has been showing excellent positioning and rebound control. Working on puck handling behind the net to improve transitions.",
     author: "Goalie Coach Martinez",

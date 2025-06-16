@@ -35,7 +35,7 @@ interface GoalieStat {
 
 const goalieStats: GoalieStat[] = [
   {
-    name: "Jordan Binnington",
+    name: "Jake Oettinger",
     games: 42,
     wins: 24,
     losses: 14,
@@ -50,7 +50,7 @@ const goalieStats: GoalieStat[] = [
     reallyBadStarts: 4
   },
   {
-    name: "Joel Hofer",
+    name: "Scott Wedgewood",
     games: 18,
     wins: 10,
     losses: 6,

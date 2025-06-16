@@ -57,7 +57,7 @@ const quickActions: QuickAction[] = [
         id: 'player-stats',
         label: 'Player Stats',
         icon: <TrendingUp className="h-4 w-4" />,
-        command: 'Compare Jordan Kyrou\'s stats to other top-6 wingers this season',
+        command: 'Compare Jason Robertson\'s stats to other top-6 wingers this season',
         description: 'Get detailed player performance analysis'
     },
     {
@@ -97,7 +97,7 @@ export function AIChatbot() {
         {
             id: '1',
             type: 'assistant',
-            content: "Hi! I'm your BluesOps AI assistant. I can help you with salary cap checks, player statistics, contract information, scheduling meetings, and more. What would you like to know?",
+            content: "Hi! I'm your StarsOps AI assistant. I can help you with salary cap checks, player statistics, contract information, scheduling meetings, and more. What would you like to know?",
             timestamp: new Date()
         }
     ])
@@ -155,7 +155,7 @@ export function AIChatbot() {
                 },
                 body: JSON.stringify({
                     messages: chatMessages,
-                    context: getCurrentBluesContext()
+                    context: getCurrentStarsContext()
                 }),
             })
 
@@ -189,37 +189,37 @@ export function AIChatbot() {
         }
     }
 
-    const getCurrentBluesContext = () => {
+    const getCurrentStarsContext = () => {
         return `
-ST. LOUIS BLUES CAP SITUATION (2025-26 Season):
+DALLAS STARS CAP SITUATION (2025-26 Season):
 
 CURRENT SEASON (2025-26):
 - NHL Cap Limit: $95,500,000
-- Projected Cap Hit: $90,474,850
-- Current Cap Space: $5,025,150
-- Active Roster: 22/23 players
-- Standard Contracts: 41/50
-- Bonus Overages: $2,153,475
-- Potential Bonuses: $1,775,000
+- Projected Cap Hit: $87,325,000
+- Current Cap Space: $8,175,000
+- Active Roster: 23/23 players
+- Standard Contracts: 43/50
+- Bonus Overages: $1,250,000
+- Potential Bonuses: $2,500,000
 
 FUTURE PROJECTIONS:
-2026-27: Cap Space $41,238,334 (Cap Limit: $104,000,000)
-2027-28: Cap Space $75,363,334 (Cap Limit: $113,500,000)  
-2028-29: Cap Space $82,750,000 (Cap Limit: $113,500,000)
+2026-27: Cap Space $35,750,000 (Cap Limit: $104,000,000)
+2027-28: Cap Space $68,500,000 (Cap Limit: $113,500,000)  
+2028-29: Cap Space $79,250,000 (Cap Limit: $113,500,000)
 
 KEY INSIGHTS:
 - Current Date: ${new Date().toLocaleDateString()}
 - Season: 2025-26 NHL Regular Season
-- Team: St. Louis Blues
-- Cap situation is very tight this year but opens up significantly in future years
-- Major decisions needed for upcoming RFA/UFA signings
-- Excellent position for future acquisitions starting 2026-27
+- Team: Dallas Stars
+- Solid cap position with room for strategic additions
+- Key contracts expiring: Robertson, Hintz extensions needed
+- Strong prospect pool ready to contribute
 
 ROSTER COMPOSITION:
-- Active roster slots available: 1
-- Contract slots available: 9
+- Active roster slots available: 0
+- Contract slots available: 7
 - LTIR Pool: Not currently used
-- Retained salary arrangements: Active
+- Retained salary arrangements: None
 
 IMPORTANT: When asked about specific player contracts, current stats, or detailed roster information not provided here, please indicate that you would need to access the player database or current sources, as roster information changes frequently during the season.
     `
@@ -300,7 +300,7 @@ IMPORTANT: When asked about specific player contracts, current stats, or detaile
                             <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-green-500 border-2 border-white rounded-full shadow-sm animate-pulse"></div>
                         </div>
                         <div>
-                            <CardTitle className="text-sm font-semibold text-slate-900">BluesOps AI</CardTitle>
+                            <CardTitle className="text-sm font-semibold text-slate-900">StarsOps AI</CardTitle>
                             <p className="text-xs text-slate-600">Hockey Operations Assistant</p>
                         </div>
                     </div>

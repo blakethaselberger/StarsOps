@@ -61,7 +61,7 @@ export default function LoginPage() {
     await new Promise(resolve => setTimeout(resolve, 1500))
 
     // Check credentials
-    if (email === "coach@bluesops.com" && password === "test1234") {
+    if (email === "coach@starsops.com" && password === "test1234") {
       setLoginSuccess(true)
       // In a real app, you'd redirect to dashboard
       setTimeout(() => {
@@ -103,7 +103,7 @@ export default function LoginPage() {
                 <Shield className="h-8 w-8 text-white" />
               </div>
               <h2 className="text-2xl font-bold text-slate-900 mb-2">Welcome Back!</h2>
-              <p className="text-slate-600">Successfully logged into BluesOps</p>
+              <p className="text-slate-600">Successfully logged into StarsOps</p>
             </div>
             <div className="flex items-center justify-center space-x-2 text-sm text-slate-500">
               <Loader2 className="h-4 w-4 animate-spin" />
@@ -135,7 +135,7 @@ export default function LoginPage() {
           </div>
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              BluesOps
+              StarsOps
             </h1>
             <p className="text-slate-600">Hockey Operations Platform</p>
           </div>
@@ -274,13 +274,13 @@ export default function LoginPage() {
                   Demo Credentials
                 </h4>
                 <div className="space-y-1 text-sm text-slate-600">
-                  <p><strong>Email:</strong> coach@bluesops.com</p>
+                  <p><strong>Email:</strong> coach@starsops.com</p>
                   <p><strong>Password:</strong> test1234</p>
                 </div>
                 <button
                   type="button"
                   onClick={() => {
-                    setEmail("coach@bluesops.com")
+                    setEmail("coach@starsops.com")
                     setPassword("test1234")
                   }}
                   className="mt-2 text-xs text-blue-600 hover:text-blue-700 transition-colors"
@@ -295,7 +295,7 @@ export default function LoginPage() {
 
         {/* Footer */}
         <div className="text-center text-xs text-slate-500">
-          <p>© 2025 BluesOps. Internal hockey operations platform.</p>
+          <p>© 2025 StarsOps. Internal hockey operations platform.</p>
         </div>
       </div>
     </div>

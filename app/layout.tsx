@@ -13,7 +13,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "BluesOps - Team Management",
+  title: "StarsOps - Team Management",
   description: "Advanced analytics and management platform for NHL team operations",
   generator: 'v0.dev',
   viewport: {

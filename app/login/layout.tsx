@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Sign In - BluesOps",
-    description: "Sign in to your BluesOps account",
+    title: "Sign In - StarsOps",
+    description: "Sign in to your StarsOps account",
 }
 
 export default function LoginLayout({

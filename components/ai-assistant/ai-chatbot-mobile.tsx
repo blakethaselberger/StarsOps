@@ -187,7 +187,7 @@ export function AIChatbotMobile({
                                 <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-green-400 border-2 border-white rounded-full animate-pulse"></div>
                             </div>
                             <div>
-                                <SheetTitle className="text-base font-semibold text-white">BluesOps AI</SheetTitle>
+                                <SheetTitle className="text-base font-semibold text-white">StarsOps AI</SheetTitle>
                                 <p className="text-xs text-blue-100">Your Hockey Operations Assistant</p>
                             </div>
                         </div>

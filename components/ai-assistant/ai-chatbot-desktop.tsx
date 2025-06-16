@@ -134,7 +134,7 @@ export function AIChatbotDesktop({
                             <div className="absolute -bottom-1 -right-1 h-3 w-3 bg-green-400 border-2 border-white rounded-full animate-pulse"></div>
                         </div>
                         <div className="flex-1">
-                            <CardTitle className="text-base font-semibold text-white">BluesOps AI</CardTitle>
+                            <CardTitle className="text-base font-semibold text-white">StarsOps AI</CardTitle>
                             <p className="text-xs text-blue-100">Hockey Operations Assistant</p>
                         </div>
                     </div>

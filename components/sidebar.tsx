@@ -264,8 +264,8 @@ export function Sidebar({ isOpen = true, className, isCollapsed = false, onNavig
           <div className="relative">
             <div className="absolute inset-0 bg-blue-600/20 blur-xl rounded-full scale-150 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <img
-              src="/st-louis-blues.svg"
-              alt="St. Louis Blues"
+              src="/dallas-stars.svg"
+              alt="Dallas Stars"
               className={cn(
                 "object-contain transition-all duration-300 relative z-10 drop-shadow-lg group-hover:scale-110 group-hover:drop-shadow-xl",
                 isCollapsed ? "h-10 w-10" : "h-12 w-12"
@@ -277,8 +277,8 @@ export function Sidebar({ isOpen = true, className, isCollapsed = false, onNavig
             isCollapsed && "lg:opacity-0 lg:w-0 lg:overflow-hidden lg:absolute"
           )}>
             <span className="text-2xl font-black tracking-tight">
-              <span className="text-[#003087]">Blues</span>
-              <span className="text-[#FCB514]">Ops</span>
+              <span className="text-[#006847]">Stars</span>
+              <span className="text-[#8F8F8C]">Ops</span>
             </span>
             <span className="text-[10px] text-slate-500 font-medium tracking-wider uppercase -mt-1">
               Hockey Operations

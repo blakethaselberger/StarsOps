@@ -36,7 +36,7 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
     {
       id: 1,
       title: "New scouting report",
-      description: "Alex Johnson added a new scouting report for Ryan O'Reilly",
+      description: "Alex Johnson added a new scouting report for Jason Robertson",
       time: "10 minutes ago",
       unread: true,
     },
@@ -50,7 +50,7 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
     {
       id: 3,
       title: "Player status update",
-      description: "Jordan Binnington has been cleared to play",
+      description: "Jake Oettinger has been cleared to play",
       time: "1 hour ago",
       unread: true,
     },
@@ -117,14 +117,14 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
           {/* Brand logo/text for mobile */}
           <div className="lg:hidden flex items-center gap-2">
             <img
-              src="/st-louis-blues.svg"
-              alt="Blues Logo"
+              src="/dallas-stars.svg"
+              alt="Stars Logo"
               className="h-6 w-6 md:h-7 md:w-7 object-contain drop-shadow-sm"
             />
             <div className="flex flex-col">
               <h1 className="text-base font-black tracking-tight leading-none">
-                <span className="text-[#003087]">Blues</span>
-                <span className="text-[#FCB514]">Ops</span>
+                <span className="text-[#006847]">Stars</span>
+                <span className="text-[#8F8F8C]">Ops</span>
               </h1>
               <span className="text-[8px] text-slate-500 font-medium tracking-wider uppercase -mt-0.5">
                 Hockey Operations
@@ -317,7 +317,7 @@ export function Header({ toggleSidebar, sidebarOpen, isCollapsed, toggleCollapse
                 <p className="text-xs font-normal leading-none text-slate-600">Head Scout</p>
               </div>
               <div className="p-3">
-                <p className="text-xs text-slate-500">john.doe@blues.com</p>
+                <p className="text-xs text-slate-500">john.doe@stars.com</p>
               </div>
               <DropdownMenuSeparator />
               <DropdownMenuItem className="hover:bg-gradient-to-r hover:from-slate-50 hover:to-blue-50/50">

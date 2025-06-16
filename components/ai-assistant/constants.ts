@@ -21,7 +21,7 @@ export const quickActions: QuickAction[] = [
         id: 'cap-management',
         label: 'Cap Management',
         icon: null, // Will be set in component
-        command: 'How much cap space do the Blues have this offseason?',
+        command: 'How much cap space do the Stars have this offseason?',
         description: 'Salary cap analysis and projections',
         color: 'from-green-500 to-green-600'
     },
@@ -51,17 +51,17 @@ export const quickActions: QuickAction[] = [
     }
 ]
 
-export const getCurrentBluesContext = () => {
+export const getCurrentStarsContext = () => {
     return `
-You are an internal AI agent developed for the St. Louis Blues organization, tasked with providing comprehensive information from across the NHL about contracts, statistics, rules, and the CBA. You have full access to NHL databases and can provide detailed, accurate information about any player, team, or league matter.
+You are an internal AI agent developed for the Dallas Stars organization, tasked with providing comprehensive information from across the NHL about contracts, statistics, rules, and the CBA. You have full access to NHL databases and can provide detailed, accurate information about any player, team, or league matter.
 
-CURRENT ST. LOUIS BLUES INFORMATION:
-- Salary Cap Space: $12.3M remaining for 2025-26 season
-- Key Blues Contracts: 
-  * Jordan Kyrou: $8.125M AAV through 2030-31
-  * Robert Thomas: $8.125M AAV through 2030-31
-  * Pavel Buchnevich: $5.8M AAV through 2025-26
-  * Colton Parayko: $6.5M AAV through 2029-30
+CURRENT DALLAS STARS INFORMATION:
+- Salary Cap Space: $15.7M remaining for 2025-26 season
+- Key Stars Contracts:
+  * Jason Robertson: $7.75M AAV through 2025-26
+  * Roope Hintz: $8.45M AAV through 2031-32
+  * Mason Marchment: $4.5M AAV through 2027-28
+  * Miro Heiskanen: $8.45M AAV through 2031-32
 - Current Date: ${new Date().toLocaleDateString('en-US')}
 - Season: 2024-25 NHL Regular Season
 

@@ -65,8 +65,8 @@ export function LayoutWrapper({ children }: LayoutWrapperProps) {
             <div className="flex h-screen items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50/30 to-blue-100/20">
                 <div className="animate-pulse">
                     <img
-                        src="/st-louis-blues.svg"
-                        alt="Blues Logo"
+                        src="/dallas-stars.svg"
+                        alt="Stars Logo"
                         className="h-12 w-12 object-contain opacity-50"
                     />
                 </div>
