@@ -28,7 +28,7 @@ type ProfileFormValues = z.infer<typeof profileFormSchema>
 
 const defaultValues: Partial<ProfileFormValues> = {
   name: "John Smith",
-  email: "john.smith@blues.com",
+  email: "john.smith@stars.com",
   title: "Head Scout",
   bio: "Experienced hockey scout with over 15 years in player evaluation and development.",
 }
@@ -120,7 +120,7 @@ export function ProfileSettings() {
               </FormItem>
             )}
           />
-          <Button type="submit">Update Profile</Button>
+          <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white">Update Profile</Button>
         </form>
       </Form>
     </div>

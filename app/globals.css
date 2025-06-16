@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 142 71% 45%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -30,7 +30,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --ring: 142 71% 45%;
 
     --radius: 0.5rem;
 
@@ -38,7 +38,7 @@
     --text-primary: 222 47% 11%;
     --text-secondary: 215 25% 27%;
     --text-muted: 217 19% 35%;
-    --text-accent: 221 83% 53%;
+    --text-accent: 142 71% 45%;
     --text-success: 142 71% 45%;
     --text-warning: 38 92% 50%;
     --text-danger: 0 84% 60%;
@@ -63,7 +63,7 @@
     --shadow-soft: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-glow: 0 0 20px rgb(59 130 246 / 0.15);
+    --shadow-glow: 0 0 20px rgb(34 197 94 / 0.15);
 
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -82,7 +82,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 217.2 91.2% 59.8%;
+    --primary: 142 69% 58%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -105,7 +105,7 @@
     --text-primary: 210 40% 98%;
     --text-secondary: 215 20% 65%;
     --text-muted: 215 16% 47%;
-    --text-accent: 217 91% 60%;
+    --text-accent: 142 69% 58%;
     --text-success: 142 69% 58%;
     --text-warning: 48 96% 53%;
     --text-danger: 0 91% 71%;
@@ -130,7 +130,7 @@
     --shadow-soft: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
     --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
     --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
-    --shadow-glow: 0 0 20px rgb(59 130 246 / 0.3);
+    --shadow-glow: 0 0 20px rgb(34 197 94 / 0.3);
 
     --gradient-primary: linear-gradient(135deg, #4c63d2 0%, #5a4a9e 100%);
     --gradient-secondary: linear-gradient(135deg, #d675e8 0%, #d1455a 100%);
@@ -384,11 +384,11 @@
 
   /* Text Gradient Utilities */
   .text-gradient-primary {
-    @apply bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent;
   }
 
   .text-gradient-secondary {
-    @apply bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-green-500 to-green-700 bg-clip-text text-transparent;
   }
 
   .text-gradient-success {

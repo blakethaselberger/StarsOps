@@ -21,26 +21,26 @@ export default function SettingsPage() {
           <TabsList className="w-full grid grid-cols-2 md:grid-cols-4 h-auto gap-1 bg-transparent">
             <TabsTrigger
               value="profile"
-              className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
+              className="data-[state=active]:bg-green-50 data-[state=active]:text-green-700 data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
             >
               Profile
             </TabsTrigger>
             <TabsTrigger
               value="team"
-              className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
+              className="data-[state=active]:bg-green-50 data-[state=active]:text-green-700 data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
             >
               Team
             </TabsTrigger>
             <TabsTrigger
               value="notifications"
-              className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
+              className="data-[state=active]:bg-green-50 data-[state=active]:text-green-700 data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
             >
               <span className="md:hidden">Notifs</span>
               <span className="hidden md:inline">Notifications</span>
             </TabsTrigger>
             <TabsTrigger
               value="security"
-              className="data-[state=active]:bg-blue-50 data-[state=active]:text-primary data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
+              className="data-[state=active]:bg-green-50 data-[state=active]:text-green-700 data-[state=active]:font-semibold data-[state=active]:shadow-none rounded-md py-2 md:py-3 font-medium text-xs md:text-sm"
             >
               Security
             </TabsTrigger>
@@ -49,7 +49,7 @@ export default function SettingsPage() {
         <TabsContent value="profile" className="space-y-4">
           <Card className="border-none shadow-sm bg-white">
             <CardHeader className="bg-gradient-to-b from-slate-50 to-white pb-4 p-4 md:p-6">
-              <CardTitle className="text-base md:text-xl font-bold text-primary">Profile Settings</CardTitle>
+              <CardTitle className="text-base md:text-xl font-bold text-green-700">Profile Settings</CardTitle>
               <CardDescription className="text-xs md:text-sm text-gray-800 font-medium">Manage your profile information</CardDescription>
             </CardHeader>
             <CardContent className="p-4 md:p-6">
@@ -60,7 +60,7 @@ export default function SettingsPage() {
         <TabsContent value="team" className="space-y-4">
           <Card className="border-none shadow-sm bg-white">
             <CardHeader className="bg-gradient-to-b from-slate-50 to-white pb-4 p-4 md:p-6">
-              <CardTitle className="text-base md:text-xl font-bold text-primary">Team Settings</CardTitle>
+              <CardTitle className="text-base md:text-xl font-bold text-green-700">Team Settings</CardTitle>
               <CardDescription className="text-xs md:text-sm text-gray-800 font-medium">Manage team preferences and access</CardDescription>
             </CardHeader>
             <CardContent className="p-4 md:p-6">
@@ -71,7 +71,7 @@ export default function SettingsPage() {
         <TabsContent value="notifications" className="space-y-4">
           <Card className="border-none shadow-sm bg-white">
             <CardHeader className="bg-gradient-to-b from-slate-50 to-white pb-4 p-4 md:p-6">
-              <CardTitle className="text-base md:text-xl font-bold text-primary">Notification Settings</CardTitle>
+              <CardTitle className="text-base md:text-xl font-bold text-green-700">Notification Settings</CardTitle>
               <CardDescription className="text-xs md:text-sm text-gray-800 font-medium">Manage your notification preferences</CardDescription>
             </CardHeader>
             <CardContent className="p-4 md:p-6">
@@ -82,7 +82,7 @@ export default function SettingsPage() {
         <TabsContent value="security" className="space-y-4">
           <Card className="border-none shadow-sm bg-white">
             <CardHeader className="bg-gradient-to-b from-slate-50 to-white pb-4 p-4 md:p-6">
-              <CardTitle className="text-base md:text-xl font-bold text-primary">Security Settings</CardTitle>
+              <CardTitle className="text-base md:text-xl font-bold text-green-700">Security Settings</CardTitle>
               <CardDescription className="text-xs md:text-sm text-gray-800 font-medium">Manage your security preferences</CardDescription>
             </CardHeader>
             <CardContent className="p-4 md:p-6">

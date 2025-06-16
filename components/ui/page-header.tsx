@@ -22,7 +22,7 @@ export function PageHeader({
   const content = (
     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <div className="space-y-1">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-blue-600">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-green-600">
           {title}
         </h1>
         {description && (
@@ -52,7 +52,7 @@ export function PageHeader({
   if (variant === "gradient") {
     return (
       <div className={cn(
-        "bg-gradient-to-r from-white to-blue-50/30 rounded-xl p-6 md:p-8 shadow-soft border border-slate-200/60",
+        "bg-gradient-to-r from-white to-green-50/30 rounded-xl p-6 md:p-8 shadow-soft border border-slate-200/60",
         className
       )}>
         {content}

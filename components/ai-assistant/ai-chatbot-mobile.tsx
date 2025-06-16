@@ -161,7 +161,7 @@ export function AIChatbotMobile({
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
                     <Button
-                        className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 z-50 border border-white/20"
+                        className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 z-50 border border-white/20"
                         size="icon"
                     >
                         <Sparkles className="h-6 w-6 text-white" />
@@ -178,7 +178,7 @@ export function AIChatbotMobile({
                     }}
                 >
                     {/* Fixed Header */}
-                    <SheetHeader className="p-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white shrink-0">
+                    <SheetHeader className="p-4 bg-gradient-to-r from-green-600 to-green-700 text-white shrink-0">
                         <div className="flex items-center gap-3">
                             <div className="relative">
                                 <div className="h-10 w-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
@@ -188,7 +188,7 @@ export function AIChatbotMobile({
                             </div>
                             <div>
                                 <SheetTitle className="text-base font-semibold text-white">StarsOps AI</SheetTitle>
-                                <p className="text-xs text-blue-100">Your Hockey Operations Assistant</p>
+                                <p className="text-xs text-green-100">Your Hockey Operations Assistant</p>
                             </div>
                         </div>
                     </SheetHeader>
@@ -234,7 +234,7 @@ export function AIChatbotMobile({
                                     )}
                                 >
                                     {message.type === 'assistant' && (
-                                        <div className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center shrink-0">
+                                        <div className="h-8 w-8 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center shrink-0">
                                             <Bot className="h-4 w-4 text-white" />
                                         </div>
                                     )}
@@ -242,7 +242,7 @@ export function AIChatbotMobile({
                                         className={cn(
                                             "max-w-[80%] rounded-2xl px-4 py-2.5 text-sm",
                                             message.type === 'user'
-                                                ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white"
+                                                ? "bg-gradient-to-r from-green-500 to-green-600 text-white"
                                                 : message.type === 'error'
                                                     ? "bg-red-50 text-red-800 border border-red-200"
                                                     : "bg-white shadow-sm border border-slate-200"
@@ -265,14 +265,14 @@ export function AIChatbotMobile({
                             ))}
                             {isTyping && (
                                 <div className="flex gap-3 justify-start">
-                                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
                                         <Bot className="h-4 w-4 text-white" />
                                     </div>
                                     <div className="bg-white shadow-sm border border-slate-200 rounded-2xl px-4 py-3">
                                         <div className="flex gap-1.5">
-                                            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce"></div>
-                                            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                                            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                                            <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce"></div>
+                                            <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                                            <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                                         </div>
                                     </div>
                                 </div>
@@ -298,7 +298,7 @@ export function AIChatbotMobile({
                                 onKeyPress={handleKeyPress}
                                 onFocus={handleInputFocus}
                                 placeholder="Ask about cap space, player stats..."
-                                className="flex-1 h-12 px-4 border-slate-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-200 rounded-full text-base"
+                                className="flex-1 h-12 px-4 border-slate-200 focus:border-green-400 focus:ring-2 focus:ring-green-200 rounded-full text-base"
                                 style={{ fontSize: '16px' }} // Prevent zoom on iOS
                                 inputMode="text"
                                 autoComplete="off"
@@ -309,7 +309,7 @@ export function AIChatbotMobile({
                             <Button
                                 onClick={handleSendMessage}
                                 disabled={!inputValue.trim() || isTyping}
-                                className="h-12 w-12 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+                                className="h-12 w-12 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                                 size="icon"
                             >
                                 {isTyping ? (

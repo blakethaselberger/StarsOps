@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 const enhancedCardVariants = {
     default: "bg-white/80 backdrop-blur-sm border border-gray-200/60 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-all duration-300",
     elevated: "bg-gradient-to-br from-white to-gray-50/80 backdrop-blur-sm border border-gray-200/60 shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-large)] transform hover:-translate-y-1 transition-all duration-300",
-    interactive: "bg-gradient-to-br from-white via-blue-50/20 to-blue-100/20 backdrop-blur-sm border border-blue-200/40 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-glow)] hover:border-blue-300/60 transition-all duration-300 cursor-pointer",
+    interactive: "bg-gradient-to-br from-white via-green-50/20 to-green-100/20 backdrop-blur-sm border border-green-200/40 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-glow)] hover:border-green-300/60 transition-all duration-300 cursor-pointer",
     glass: "bg-white/10 backdrop-blur-lg border border-white/20 shadow-[var(--shadow-subtle)] hover:bg-white/20 transition-all duration-300",
 }
 

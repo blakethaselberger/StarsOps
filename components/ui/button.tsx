@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] hover:from-blue-700 hover:to-blue-900 transform hover:-translate-y-0.5",
+        default: "bg-gradient-to-r from-green-600 to-green-800 text-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] hover:from-green-700 hover:to-green-900 transform hover:-translate-y-0.5",
         destructive:
           "bg-gradient-to-r from-red-500 to-red-600 text-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] hover:from-red-600 hover:to-red-700 transform hover:-translate-y-0.5",
         outline:
@@ -17,9 +17,9 @@ const buttonVariants = cva(
         secondary:
           "bg-gradient-to-r from-gray-100 to-gray-200 text-gray-900 shadow-[var(--shadow-subtle)] hover:shadow-[var(--shadow-soft)] hover:from-gray-200 hover:to-gray-300 transform hover:-translate-y-0.5",
         ghost: "hover:bg-gradient-to-r hover:from-gray-100/80 hover:to-gray-200/80 hover:backdrop-blur-sm",
-        link: "text-blue-600 underline-offset-4 hover:underline hover:text-blue-700",
+        link: "text-green-600 underline-offset-4 hover:underline hover:text-green-700",
         success: "bg-gradient-to-r from-green-500 to-emerald-600 text-white shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] hover:from-green-600 hover:to-emerald-700 transform hover:-translate-y-0.5",
-        premium: "bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-large)] transform hover:-translate-y-1 hover:scale-105",
+        premium: "bg-gradient-to-r from-green-500 via-green-600 to-green-700 text-white shadow-[var(--shadow-glow)] hover:shadow-[var(--shadow-large)] transform hover:-translate-y-1 hover:scale-105",
       },
       size: {
         default: "h-10 px-4 py-2",

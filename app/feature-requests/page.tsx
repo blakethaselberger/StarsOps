@@ -183,7 +183,7 @@ export default function FeatureRequestsPage() {
                 action={
                     <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                         <DialogTrigger asChild>
-                            <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700">
+                            <Button className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700">
                                 <Plus className="mr-2 h-4 w-4" />
                                 Submit Request
                             </Button>
@@ -265,8 +265,8 @@ export default function FeatureRequestsPage() {
                 <Card>
                     <CardContent className="p-6">
                         <div className="flex items-center gap-3">
-                            <div className="p-2 bg-blue-100 rounded-lg">
-                                <Lightbulb className="h-5 w-5 text-blue-600" />
+                            <div className="p-2 bg-green-100 rounded-lg">
+                                <Lightbulb className="h-5 w-5 text-green-600" />
                             </div>
                             <div>
                                 <p className="text-2xl font-bold">{stats.total}</p>

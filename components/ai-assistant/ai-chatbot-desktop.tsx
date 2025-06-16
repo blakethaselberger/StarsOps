@@ -104,7 +104,7 @@ export function AIChatbotDesktop({
             <Button
                 onClick={() => setIsOpen(true)}
                 className={cn(
-                    "fixed h-16 w-16 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 z-50",
+                    "fixed h-16 w-16 rounded-2xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-110 z-50",
                     "backdrop-blur-sm border border-white/20 group",
                     getPositionClasses()
                 )}
@@ -124,7 +124,7 @@ export function AIChatbotDesktop({
                 getPositionClasses()
             )}
         >
-            <CardHeader className="pb-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+            <CardHeader className="pb-3 bg-gradient-to-r from-green-600 to-green-700 text-white">
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <div className="relative">
@@ -135,7 +135,7 @@ export function AIChatbotDesktop({
                         </div>
                         <div className="flex-1">
                             <CardTitle className="text-base font-semibold text-white">StarsOps AI</CardTitle>
-                            <p className="text-xs text-blue-100">Hockey Operations Assistant</p>
+                            <p className="text-xs text-green-100">Hockey Operations Assistant</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-1">
@@ -196,7 +196,7 @@ export function AIChatbotDesktop({
                                     )}
                                 >
                                     {message.type === 'assistant' && (
-                                        <div className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center shrink-0">
+                                        <div className="h-8 w-8 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center shrink-0">
                                             <Bot className="h-4 w-4 text-white" />
                                         </div>
                                     )}
@@ -204,7 +204,7 @@ export function AIChatbotDesktop({
                                         className={cn(
                                             "max-w-[80%] rounded-2xl px-4 py-2.5 text-sm",
                                             message.type === 'user'
-                                                ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white"
+                                                ? "bg-gradient-to-r from-green-500 to-green-600 text-white"
                                                 : message.type === 'error'
                                                     ? "bg-red-50 text-red-800 border border-red-200"
                                                     : "bg-white shadow-sm border border-slate-200"
@@ -223,7 +223,7 @@ export function AIChatbotDesktop({
                                                     <Badge
                                                         key={index}
                                                         variant="secondary"
-                                                        className="text-xs bg-blue-100 text-blue-700 hover:bg-blue-200 cursor-pointer transition-colors"
+                                                        className="text-xs bg-green-100 text-green-700 hover:bg-green-200 cursor-pointer transition-colors"
                                                     >
                                                         {action.type === 'cap-check' && <Calculator className="h-3 w-3 mr-1" />}
                                                         {action.type === 'player-stats' && <TrendingUp className="h-3 w-3 mr-1" />}
@@ -245,14 +245,14 @@ export function AIChatbotDesktop({
                             ))}
                             {isTyping && (
                                 <div className="flex gap-3 justify-start">
-                                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
                                         <Bot className="h-4 w-4 text-white" />
                                     </div>
                                     <div className="bg-white shadow-sm border border-slate-200 rounded-2xl px-4 py-3">
                                         <div className="flex gap-1.5">
-                                            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce"></div>
-                                            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-                                            <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                                            <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce"></div>
+                                            <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+                                            <div className="w-2 h-2 bg-green-500 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
                                         </div>
                                     </div>
                                 </div>
@@ -270,12 +270,12 @@ export function AIChatbotDesktop({
                                 onChange={(e) => setInputValue(e.target.value)}
                                 onKeyPress={handleKeyPress}
                                 placeholder="Ask about cap space, player stats, contracts..."
-                                className="flex-1 h-11 px-4 border-slate-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-200 rounded-full"
+                                className="flex-1 h-11 px-4 border-slate-200 focus:border-green-400 focus:ring-2 focus:ring-green-200 rounded-full"
                             />
                             <Button
                                 onClick={handleSendMessage}
                                 disabled={!inputValue.trim() || isTyping}
-                                className="h-11 w-11 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+                                className="h-11 w-11 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                                 size="icon"
                             >
                                 {isTyping ? (
